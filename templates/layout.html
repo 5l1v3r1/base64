@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+    <ul>
+      <li><a href="{{ url_for('decoder') }}">base64 decoder</a></li>
+      <li><a href="{{ url_for('encoder') }}">base64 encoder</a></li>
+    </ul>
+    {% block body %}
+    {% endblock %}
+    <center><h1><a align="center" href="https://iran-cyber.net"> Wrote by iwHH < Thanks to jok3r for idea > | iran-cyber.net</a></h1></center>
+  </body>
+</html>
